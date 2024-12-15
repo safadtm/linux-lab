@@ -1,0 +1,5 @@
+echo "welcome to linux"
+echo -e "welcome \nto \nlinux"
+echo -e "welcome \tto \tlinux"
+echo -e "welcome \bto \blinux"
+echo -n "welcome to linux"
