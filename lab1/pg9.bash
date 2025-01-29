@@ -1,17 +1,12 @@
 echo "Enter 3 numbers"
 read a b c
-if [ $a -gt $b ]
-then
-if [ $a -gt $c ]
-then
-large=$a
+
+if [ $a -ge $b ] && [ $a -ge $c ]; then
+    large=$a
+elif [ $b -ge $a ] && [ $b -ge $c ]; then
+    large=$b
 else
-large=$c
+    large=$c
 fi
-elif [ $b -gt $c ]
-then
-large=$b
-else
-large=$c
-fi
+
 echo "Largest of $a $b $c is $large"
