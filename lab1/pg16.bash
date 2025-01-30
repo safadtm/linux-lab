@@ -1,11 +1,13 @@
-echo “Enter a 5 digit number:”
-read num
-sum=0
-while [ $num -ne 0 ]
+echo -n "Enter a number to sum:"
+read number
 
+sum=0
+
+while [ $number -ne 0 ]
 do
-r=$(( num%10 ))
-sum=$(( sum+r ))
-num=$(( num/10 ))
+    remainder=$((number%10))
+    sum=$((sum+remainder))
+    number=$((number/10))
 done
-echo “sum = $sum”
+
+echo "Sum = $sum"
