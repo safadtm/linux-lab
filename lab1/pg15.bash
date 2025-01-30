@@ -1,3 +1,4 @@
+
 echo -n "Enter a number for factorial:"
 read number
 
@@ -10,4 +11,4 @@ do
     i=$((i+1))
 done
 
-echo "factorial of the $number is $factorial"
+echo "factorial of a $number is $factorial"
